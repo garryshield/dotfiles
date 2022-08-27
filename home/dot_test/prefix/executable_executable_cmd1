@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "executable_cmd1"
