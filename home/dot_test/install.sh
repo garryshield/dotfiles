@@ -9,7 +9,3 @@ chezmoi="$HOME/.local/bin/chezmoi"
 exec "$chezmoi" init garryshield
 
 
-
-sdsdsd
-
-
