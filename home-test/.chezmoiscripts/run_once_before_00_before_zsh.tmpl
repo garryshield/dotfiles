@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo {{ .osid | quote }}
+
+{{ if eq .osid "linux-ubuntu" -}}
+
+apt-get update
+apt-get install -y zsh
+zsh --version
+
+{{ end -}}
