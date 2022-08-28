@@ -4,8 +4,8 @@ echo {{ .osid | quote }}
 
 {{ if eq .osid "linux-ubuntu" -}}
 apt-get update
-apt-get install -y zsh
-zsh --version
+apt-get install -y git
+git --version
 {{ end -}}
 
 {{ if eq .osid "darwin" -}}
