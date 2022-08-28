@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo {{ .osid | quote }}
+
+{{ if eq .osid "linux-ubuntu" -}}
+{{ end -}}
