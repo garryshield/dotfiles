@@ -1,0 +1,38 @@
+{
+  "chezmoi": {
+    "arch": "amd64",
+    "args": [
+      "chezmoi",
+      "data"
+    ],
+    "cacheDir": "/Users/garry/.cache/chezmoi",
+    "configFile": "/Users/garry/.config/chezmoi/chezmoi.yaml",
+    "executable": "/Users/garry/bin/chezmoi",
+    "fqdnHostname": "Garry-Mac.local",
+    "gid": "20",
+    "group": "staff",
+    "homeDir": "/Users/garry",
+    "hostname": "Garry-Mac",
+    "kernel": {},
+    "os": "darwin",
+    "osRelease": {},
+    "sourceDir": "/Users/garry/.local/share/chezmoi/home",
+    "uid": "501",
+    "username": "garry",
+    "version": {
+      "builtBy": "goreleaser",
+      "commit": "3af5c7fa9c744356ae5032f8a20b0aeaf13f0845",
+      "date": "2022-08-23T23:24:56Z",
+      "version": "2.21.0"
+    },
+    "windowsVersion": {},
+    "workingTree": "/Users/garry/.local/share/chezmoi"
+  },
+  "shared": {
+    "data1": "data1"
+  },
+  "user": {
+    "email": "foo@gmail.com",
+    "name": "foo"
+  }
+}

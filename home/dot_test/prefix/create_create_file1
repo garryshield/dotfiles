@@ -1,1 +1,9 @@
-如果文件不存在创建这个文件
+{
+    "user": {
+        "email": {{ .user.email | quote }},
+        "name": {{ .user.name | quote }}
+    },
+    "shared": {
+        "data1": {{ .shared.data1 | quote }}
+    }
+}

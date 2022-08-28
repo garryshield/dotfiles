@@ -7,5 +7,3 @@ apt-get install -y curl
 sh -c "$(curl -fsLS https://chezmoi.io/get)" -- -b "$HOME/.local/bin"
 chezmoi="$HOME/.local/bin/chezmoi"
 exec "$chezmoi" init garryshield
-
-
