@@ -46,3 +46,10 @@
   exact: true
   stripComponents: 1
   refreshPeriod: "168h"
+
+".pyenv/plugins/pyenv-doctor":
+  type: "archive"
+  url: "https://github.com/pyenv/pyenv-doctor/archive/master.tar.gz"
+  exact: true
+  stripComponents: 1
+  refreshPeriod: "168h"
