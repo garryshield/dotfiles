@@ -5,6 +5,7 @@ echo {{ .osid | quote }}
 {{ if eq .osid "linux-ubuntu" -}}
 DEBIAN_FRONTEND=noninteractive
 
+pyenv install 3.10:latest
 pyenv versions
 {{ end -}}
 
