@@ -3,8 +3,9 @@
 echo {{ .osid | quote }}
 
 {{ if eq .osid "linux-ubuntu" -}}
-
 chsh -s $(which zsh)
 echo $SHELL
+{{ end -}}
 
+{{ if eq .osid "darwin" -}}
 {{ end -}}
