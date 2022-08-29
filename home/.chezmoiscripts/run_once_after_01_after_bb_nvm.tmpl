@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo {{ .osid | quote }}
+
+{{ if eq .osid "linux-ubuntu" -}}
+DEBIAN_FRONTEND=noninteractive
+
+nvm install --lts --latest-npm
+nvm list
+{{ end -}}
+
+{{ if eq .osid "darwin" -}}
+{{ end -}}
