@@ -1,48 +1,55 @@
 ".oh-my-zsh":
-  type: "git-repo"
-  url: "https://github.com/ohmyzsh/ohmyzsh"
+  type: "archive"
+  url: "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".oh-my-zsh/custom/plugins/zsh-completions":
-  type: "git-repo"
-  url: "https://github.com/zsh-users/zsh-completions"
+  type: "archive"
+  url: "https://github.com/zsh-users/zsh-completions/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".oh-my-zsh/custom/plugins/zsh-autosuggestions":
-  type: "git-repo"
-  url: "https://github.com/zsh-users/zsh-autosuggestions"
+  type: "archive"
+  url: "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting":
-  type: "git-repo"
-  url: "https://github.com/zsh-users/zsh-syntax-highlighting"
+  type: "archive"
+  url: "https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".oh-my-zsh/custom/plugins/zsh-autocomplete":
-  type: "git-repo"
-  url: "https://github.com/marlonrichert/zsh-autocomplete"
+  type: "archive"
+  url: "https://github.com/marlonrichert/zsh-autocomplete/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".nvm":
-  type: "git-repo"
-  url: "https://github.com/nvm-sh/nvm"
+  type: "archive"
+  url: "https://github.com/nvm-sh/nvm/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
 ".pyenv":
-  type: "git-repo"
-  url: "https://github.com/pyenv/pyenv"
+  type: "archive"
+  url: "https://github.com/pyenv/pyenv/archive/master.tar.gz"
   exact: true
+  stripComponents: 1
   refreshPeriod: "168h"
 
-# ".pyenv/plugins/pyenv-doctor":
-#   type: "git-repo"
-#   url: "https://github.com/pyenv/pyenv-doctor"
-#   exact: true
-#   stripComponents: 1
-#   refreshPeriod: "168h"
+".pyenv/plugins/pyenv-doctor":
+  type: "archive"
+  url: "https://github.com/pyenv/pyenv-doctor/archive/master.tar.gz"
+  exact: true
+  stripComponents: 1
+  refreshPeriod: "168h"
