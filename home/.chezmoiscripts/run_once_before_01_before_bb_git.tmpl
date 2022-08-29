@@ -3,6 +3,8 @@
 echo {{ .osid | quote }}
 
 {{ if eq .osid "linux-ubuntu" -}}
+DEBIAN_FRONTEND=noninteractive
+
 apt-get update
 apt-get install -y git
 git --version
