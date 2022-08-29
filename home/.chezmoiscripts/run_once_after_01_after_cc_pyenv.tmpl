@@ -3,7 +3,7 @@
 echo {{ .osid | quote }}
 
 {{ if eq .osid "linux-ubuntu" -}}
-which pyenv
+pyenv versions
 {{ end -}}
 
 {{ if eq .osid "darwin" -}}
