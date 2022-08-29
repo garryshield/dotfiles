@@ -5,8 +5,8 @@ echo {{ .osid | quote }}
 {{ if eq .osid "linux-ubuntu" -}}
 DEBIAN_FRONTEND=noninteractive
 
-pyenv install 3.10:latest
-pyenv versions
+/bin/zsh -i -c "nvm install --lts --latest-npm"
+/bin/zsh -i -c "nvm list"
 {{ end -}}
 
 {{ if eq .osid "darwin" -}}
