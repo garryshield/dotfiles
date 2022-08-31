@@ -6,8 +6,8 @@ echo {{ .osid | quote }}
 export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
-apt-get install -y git
-git --version
+
+ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 {{ end -}}
 
 {{ if eq .osid "darwin" -}}

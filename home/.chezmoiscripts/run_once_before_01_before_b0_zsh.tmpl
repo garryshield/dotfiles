@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo {{ .osid | quote }}
+
+{{ if eq .osid "linux-ubuntu" -}}
+export DEBIAN_FRONTEND=noninteractive
+
+apt-get install -y zsh
+zsh --version
+{{ end -}}
+
+{{ if eq .osid "darwin" -}}
+{{ end -}}

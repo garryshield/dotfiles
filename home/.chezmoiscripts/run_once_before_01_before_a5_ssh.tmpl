@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo {{ .osid | quote }}
+
+{{ if eq .osid "linux-ubuntu" -}}
+export DEBIAN_FRONTEND=noninteractive
+
+apt-get install -y openssh-client openssh-server
+{{ end -}}
+
+{{ if eq .osid "darwin" -}}
+{{ end -}}
