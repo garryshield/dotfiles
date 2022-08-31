@@ -3,7 +3,7 @@
 echo {{ .osid | quote }}
 
 {{ if eq .osid "linux-ubuntu" -}}
-DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteractive
 
 /bin/zsh -i -c "pyenv install -s -v 3.10:latest"
 /bin/zsh -i -c "pyenv versions"
