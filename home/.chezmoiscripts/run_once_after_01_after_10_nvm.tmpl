@@ -7,6 +7,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 /bin/zsh -i -c "nvm install --lts --latest-npm"
 /bin/zsh -i -c "nvm list"
+/bin/zsh -i -c "nvm use --lts"
+/bin/zsh -i -c "nvm install -g yarn"
 {{ end -}}
 
 {{ if eq .osid "darwin" -}}

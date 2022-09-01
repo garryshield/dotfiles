@@ -4,3 +4,16 @@
 
 {{ if eq .osid "darwin" -}}
 {{ end -}}
+
+# nvm
+# https://github.com/nvm-sh/nvm/blob/a82edf40ba72a15b1d40822735942141547f38e2/install.sh#L405
+# https://github.com/nvm-sh/nvm/blob/a82edf40ba72a15b1d40822735942141547f38e2/install.sh#L408
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pyenv
+# https://github.com/pyenv/pyenv/blob/a8afc611467d2a62f8d119205943395c1b5111de/libexec/pyenv-init#L128
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
